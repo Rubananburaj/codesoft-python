@@ -1,3 +1,5 @@
+
+#functions to perform calculations
 def add(n1, n2):
     return(n1+n2)
 
@@ -14,10 +16,12 @@ def division(n1,n2):
         return("cannot divide by zero")
 
 
-
+#getting numbers for calculatiion
 
 num1=float(input("enter the number 1 :"))
 num2=float(input("enter the number 2 :"))
+
+#getting operators 
  
 choice=input("choose operation(+,-,*,/) :")
 
