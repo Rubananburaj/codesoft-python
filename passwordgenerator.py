@@ -2,6 +2,14 @@ import random
 import string
 
 def generate_password(length):
+   """ string.ascii_letters: This constant is a string containing all ASCII letters, both lowercase and uppercase.
+    It is equivalent to concatenating string.ascii_lowercase and string.ascii_uppercase.
+        For example, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"."""
+
+#string.digits: This constant is a string containing the digits "0123456789".
+
+#string.punctuation: This constant is a string containing ASCII characters considered as punctuation, such as !"#$%&'()*+,-./:;<=>?@[]^_`{|}~.
+
     characters = string.ascii_letters + string.digits + string.punctuation
     password_list = [random.choice(characters) for _ in range(length)]
     password = ''.join(password_list) 
